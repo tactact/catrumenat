@@ -56,11 +56,15 @@ header{height: 60px;
       background-color: #ffffff;
     }
 
+    #left h4 {
+
+    }
+
 #main {
   font-size: 30px;
   overflow: auto;
   float: left;
-  width: 1500px;
+  width: 1200px;
   margin: 30px;
   margin-top: 50px;
   display: flex;

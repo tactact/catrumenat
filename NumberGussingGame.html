@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Number guessing game</title>
+    <title>C=3 A=1 T=20</title>
     <style>
       body {
         background-color: #ccccff;
@@ -26,11 +26,11 @@
   <body>
     <h1>숫자 추측 게임</h1>
 
-    <p>현재 1에서 100 사이의 임의의 수가 선택되었습니다. 아래의 칸에 숫자를 입력하여 10턴 안에 해당 수를 맞히십시오. 숫자를 입력할 때마다 정해진 수가 입력된 수보다 큰 수인지 작은 수인지 제시됩니다.</p>
+    <h4>방금 네가 이 페이지에 들어오면서 C에서 100A + T 사이의 임의의 수가 선택되었어, 아래 칸에 숫자를 입력해서 한번 6턴 안에 해당 수를 맞혀봐// 틀릴때마다 힌트도 주니 잘 풀어봐봐 (단, C,A,T의 수는 브라우저의 제목을 확인하시오.)</h4>
 
     <div class="form">
       <label for="guessField">입력: </label>
-      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="number" min="3" max="120" required id="guessField" class="guessField">
       <input type="submit" value="확인" class="guessSubmit">
     </div>
 
@@ -41,7 +41,7 @@
     </div>
 
     <script>
-      let randomNumber = Math.floor(Math.random() * 100) + 1;
+      let randomNumber = Math.floor(Math.random() * 118) + 3;
       const guesses = document.querySelector('.guesses');
       const lastResult = document.querySelector('.lastResult');
       const lowOrHi = document.querySelector('.lowOrHi');
@@ -63,7 +63,7 @@
           lastResult.style.backgroundColor = 'green';
           lowOrHi.textContent = '';
           setGameOver();
-        } else if (guessCount === 10) {
+        } else if (guessCount === 6) {
           lastResult.textContent = '!!!게임 오버!!!';
           lowOrHi.textContent = '';
           setGameOver();
@@ -106,7 +106,7 @@
         guessField.value = '';
         guessField.focus();
         lastResult.style.backgroundColor = 'white';
-        randomNumber = Math.floor(Math.random() * 100) + 1;
+        randomNumber = Math.floor(Math.random() * 118) + 3;
       }
     </script>
   </body>

@@ -12,13 +12,16 @@ body{
     background-color: #ccccff;
 }
 
+.background{
+  position: fixed;
+}
+
 .clock{
     width:350px;
     height:350px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background: url(image/clock.png);
     background-size: cover;
     border: 4px solid #ccccff;
     box-shadow: 0 -15px 15px rgba(255,255,255,0.05),

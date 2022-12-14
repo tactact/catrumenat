@@ -1,0 +1,31 @@
+body{background-color: #d4d1cc}
+
+img{
+  position: absolute;
+  z-index: -1;
+}
+
+.YES{
+  position: absolute;
+  left: 357px;
+  top: 775px;
+  background-color: #d4d1cc;
+  line-height: 0px;
+}
+
+.yes{
+  position: absolute;
+  right: 355px;
+  top: 780px;
+  background-color: #d4d1cc;
+  line-height: 0px;
+
+}
+
+.b{
+  color: black;
+}
+
+.n{
+  text-decoration: none;
+}
